@@ -5,6 +5,7 @@ import PricingPage from "./pages/user/Pricing";
 import AboutUsPage from "./pages/user/Aboutus"; // Import About Us page
 import SignupPage from "./pages/user/Signup"; // Import Signup page
 import LoginPage from "./pages/user/Login"; // Import Login page
+import DiscoverPage from "./pages/user/Discover"; // Corrected route to DiscoverPage
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/aboutus" element={<AboutUsPage />} /> {/* About Us page route */}
       <Route path="/signup" element={<SignupPage />} /> {/* Signup page route */}
       <Route path="/login" element={<LoginPage />} /> {/* Login page route */}
+      <Route path="/discover" element={<DiscoverPage />} /> {/* Updated Discover page route */}
     </Routes>
   );
 }
