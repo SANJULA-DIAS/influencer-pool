@@ -6,6 +6,9 @@ import AboutUsPage from "./pages/user/Aboutus"; // Import About Us page
 import SignupPage from "./pages/user/Signup"; // Import Signup page
 import LoginPage from "./pages/user/Login"; // Import Login page
 import DiscoverPage from "./pages/user/Discover"; // Corrected route to DiscoverPage
+import FeaturesPage from "./pages/user/features";
+import ContactPage from "./pages/user/contact";
+
 
 function App() {
   return (
@@ -16,8 +19,12 @@ function App() {
       <Route path="/signup" element={<SignupPage />} /> {/* Signup page route */}
       <Route path="/login" element={<LoginPage />} /> {/* Login page route */}
       <Route path="/discover" element={<DiscoverPage />} /> {/* Updated Discover page route */}
+      <Route path="/features" element={<FeaturesPage />} /> {/* Login page route */}
+      <Route path="/contact" element={<ContactPage />} /> {/* Login page route */}
+
     </Routes>
   );
 }
 
 export default App;
+

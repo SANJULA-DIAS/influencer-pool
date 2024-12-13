@@ -78,10 +78,10 @@ const LandingPage = () => {
             Empower your brand with the perfect influence partnerships. Find influencers that align with your business, and grow your online presence with data-driven campaigns.
           </p>
           <div className="flex justify-center gap-4 mt-8">
-            <Link to="/join" className="bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition-colors">
+            <Link to="/signup" className="bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition-colors">
               Join as an Influencer
             </Link>
-            <Link to="/find" className="bg-white text-red-500 border-2 border-red-500 px-8 py-3 rounded-lg hover:bg-red-50 transition-colors">
+            <Link to="/discover" className="bg-white text-red-500 border-2 border-red-500 px-8 py-3 rounded-lg hover:bg-red-50 transition-colors">
               Find Influencers
             </Link>
           </div>

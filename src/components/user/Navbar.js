@@ -1,14 +1,8 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Droplets } from 'lucide-react';
 
 const Navbar = () => {
-  const location = useLocation();
-  
-  const isActive = (path) => {
-    return location.pathname === path ? 'text-[#E84C3D]' : 'text-gray-600';
-  };
-
   return (
     <nav className="bg-white py-4 px-6 shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -21,30 +15,10 @@ const Navbar = () => {
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">
-          <Link 
-            to="/discover" 
-            className={`${isActive('/discover')} hover:text-[#E84C3D] transition-colors`}
-          >
-            Discover
-          </Link>
-          <Link 
-            to="/dashboard" 
-            className={`${isActive('/dashboard')} hover:text-[#E84C3D] transition-colors`}
-          >
-            Dashboard
-          </Link>
-          <Link 
-            to="/contracts" 
-            className={`${isActive('/contracts')} hover:text-[#E84C3D] transition-colors`}
-          >
-            Contracts
-          </Link>
-          <Link 
-            to="/messages" 
-            className={`${isActive('/messages')} hover:text-[#E84C3D] transition-colors`}
-          >
-            Messages
-          </Link>
+          <Link to="/features" className="text-gray-600 hover:text-gray-900">Features</Link>
+          <Link to="/aboutus" className="text-gray-600 hover:text-gray-900">About Us</Link>
+          <Link to="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link>
+          <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
         </div>
 
         <div className="flex items-center space-x-4">
