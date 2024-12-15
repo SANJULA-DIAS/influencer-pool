@@ -8,6 +8,9 @@ import LoginPage from "./pages/user/Login"; // Import Login page
 import DiscoverPage from "./pages/user/Discover"; // Corrected route to DiscoverPage
 import FeaturesPage from "./pages/user/features";
 import ContactPage from "./pages/user/contact";
+import InfluencerPage from "./pages/user/InfluencerPage";
+import InfluencerDashboard from "./pages/user/InfluDashboard";
+import AllContracts from "./pages/user/AllContracts";
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
       <Route path="/discover" element={<DiscoverPage />} /> {/* Updated Discover page route */}
       <Route path="/features" element={<FeaturesPage />} /> {/* Login page route */}
       <Route path="/contact" element={<ContactPage />} /> {/* Login page route */}
+      <Route path="/influencerpage" element={<InfluencerPage />} /> {/* Login page route */}
+      <Route path="/influencerDashboard" element={<InfluencerDashboard />} /> {/* Login page route */}
+      <Route path="/AllContracts" element={<AllContracts />} /> {/* Login page route */}
 
     </Routes>
   );
