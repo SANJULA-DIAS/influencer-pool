@@ -1,9 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Navbar from "../../components/user/Navbar"; // Adjust the path as needed
 import Footer from "../../components/user/Footer"; // Adjust the path as needed
 
 const LoginPage = () => {
+
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    // Add login logic here, e.g., validate user credentials
+    const isValid = true; // Replace with actual validation logic
+
+    if (isValid) {
+      // Redirect to dashboard if login is successful
+      navigate('/dashboard');
+    } else {
+      alert('Invalid credentials. Please try again.');
+    }
+  };
+  
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
