@@ -11,6 +11,7 @@ import ContactPage from "./pages/user/contact";
 import InfluencerPage from "./pages/user/InfluencerPage";
 import InfluencerDashboard from "./pages/user/InfluDashboard";
 import AllContracts from "./pages/user/AllContracts";
+import Messages from "./pages/user/Messages";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route path="/influencerpage" element={<InfluencerPage />} /> {/* Login page route */}
       <Route path="/influencerDashboard" element={<InfluencerDashboard />} /> {/* Login page route */}
       <Route path="/AllContracts" element={<AllContracts />} /> {/* Login page route */}
+      <Route path="/messages" element={<Messages />} /> {/* Login page route */}
 
     </Routes>
   );
