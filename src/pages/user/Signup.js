@@ -550,12 +550,19 @@ function SignupForm() {
               </p>
             )}
 
-            <button
-              onClick={() => navigate('/dashboard')}
-              className="w-full max-w-md mx-auto px-6 py-3 border-2 border-[#1e3a8a] text-[#1e3a8a] rounded-lg hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
-            >
-              Go To Dashboard
-            </button>
+<button
+  onClick={() => {
+    if (userType === 'business') {
+      navigate('/influencerdashboard');
+    } else if (userType === 'influencer') {
+      navigate('/dashboard');
+    }
+  }}
+  className="w-full max-w-md mx-auto px-6 py-3 border-2 border-[#1e3a8a] text-[#1e3a8a] rounded-lg hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
+>
+  Go To Dashboard
+</button>
+
           </div>
         )}
       </div>
