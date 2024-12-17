@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Droplets, Bell, MessageSquare, ChevronDown } from 'lucide-react';
 
 const LoggedInNavbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const isActive = (path) => {
     return location.pathname === path ? 'text-[#E84C3D]' : 'text-gray-600';
+  };
+
+  const handleLogout = () => {
+    // Perform any logout logic here if necessary (e.g., clearing tokens)
+    navigate('/'); // Redirect to the landing page
   };
 
   return (
@@ -88,25 +94,12 @@ const LoggedInNavbar = () => {
             </div>
             {isProfileDropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
-                <Link
-                  to="/profile"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#E84C3D]"
-                >
-                  Profile
-                </Link>
-                <Link
-                  to="/settings"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#E84C3D]"
-                >
-                  Settings
-                </Link>
-                <hr className="my-2" />
-                <Link
-                  to="/logout"
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#E84C3D]"
+                <button
+                  onClick={handleLogout}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#E84C3D]"
                 >
                   Logout
-                </Link>
+                </button>
               </div>
             )}
           </div>

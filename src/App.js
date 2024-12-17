@@ -16,6 +16,7 @@ import InfluencerDashboard from "./pages/user/InfluDashboard";
 import AllContracts from "./pages/user/AllContracts";
 import Messages from "./pages/user/Messages";
 import ContractSubmit from "./pages/user/Contract Submit";
+import ManageCampaigns from "./pages/user/manage-campaigns";
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <Route path="/AllContracts" element={<AllContracts />} /> {/* Login page route */}
       <Route path="/messages" element={<Messages />} /> {/* Login page route */}
       <Route path="/contractsubmit" element={<ContractSubmit />} /> {/* Login page route */}
+      <Route path="/manage-campaigns" element={<ManageCampaigns />} /> {/* Login page route */}
 
 
       </Routes>
