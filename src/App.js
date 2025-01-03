@@ -15,6 +15,11 @@ import InfluencerPage from "./pages/user/InfluencerPage";
 import InfluencerDashboard from "./pages/user/InfluDashboard";
 import AllContracts from "./pages/user/AllContracts";
 import Messages from "./pages/user/Messages";
+import ContractSubmit from "./pages/user/Contract Submit";
+import ManageCampaigns from "./pages/user/manage-campaigns";
+import Payment from "./pages/user/Payment";
+
+
 
 function App() {
   return (
@@ -33,6 +38,10 @@ function App() {
       <Route path="/influencerDashboard" element={<InfluencerDashboard />} /> {/* Influencer Dashboard route */}
       <Route path="/AllContracts" element={<AllContracts />} /> {/* AllContracts route */}
       <Route path="/messages" element={<Messages />} /> {/* Messages route */}
+      <Route path="/contractsubmit" element={<ContractSubmit />} /> {/* Login page route */}
+      <Route path="/manage-campaigns" element={<ManageCampaigns />} /> {/* Login page route */}
+      <Route path="/payment" element={<Payment />} /> {/* Login page route */}
+
     </Routes>
   );
 }
