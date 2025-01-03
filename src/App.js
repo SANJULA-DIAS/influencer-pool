@@ -16,7 +16,6 @@ import InfluencerDashboard from "./pages/user/InfluDashboard";
 import AllContracts from "./pages/user/AllContracts";
 import Messages from "./pages/user/Messages";
 
-
 function App() {
   return (
     <Routes> {/* Wrap all Route components inside Routes */}
@@ -26,16 +25,15 @@ function App() {
       <Route path="/signup" element={<SignupPage />} /> {/* Signup page route */}
       <Route path="/login" element={<LoginPage />} /> {/* Login page route */}
       <Route path="/discover" element={<DiscoverPage />} /> {/* Updated Discover page route */}
-      <Route path="/features" element={<FeaturesPage />} /> {/* Login page route */}
-      <Route path="/contact" element={<ContactPage />} /> {/* Login page route */}
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/campaigns" element={<Campaigns />} />
-      <Route path="/influencerpage" element={<InfluencerPage />} /> {/* Login page route */}
-      <Route path="/influencerDashboard" element={<InfluencerDashboard />} /> {/* Login page route */}
-      <Route path="/AllContracts" element={<AllContracts />} /> {/* Login page route */}
-      <Route path="/messages" element={<Messages />} /> {/* Login page route */}
-
-      </Routes>
+      <Route path="/features" element={<FeaturesPage />} /> {/* Features page route */}
+      <Route path="/contact" element={<ContactPage />} /> {/* Contact page route */}
+      <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard route */}
+      <Route path="/campaigns" element={<Campaigns />} /> {/* Campaigns route */}
+      <Route path="/profile" element={<InfluencerPage />} /> {/* Profile page route */}
+      <Route path="/influencerDashboard" element={<InfluencerDashboard />} /> {/* Influencer Dashboard route */}
+      <Route path="/AllContracts" element={<AllContracts />} /> {/* AllContracts route */}
+      <Route path="/messages" element={<Messages />} /> {/* Messages route */}
+    </Routes>
   );
 }
 

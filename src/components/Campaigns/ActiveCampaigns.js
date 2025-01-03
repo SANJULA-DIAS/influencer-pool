@@ -19,11 +19,18 @@ export const ActiveCampaigns = () => {
       task: "Review Video, Unboxing Video",
       status: "Submitted for Review",
     },
-    // Add more campaigns as needed
+    {
+      brand: "FitLife Supplements",
+      platform: "instagram",
+      title: "30-Day Fitness Challenge",
+      duration: { start: "Aug 16", end: "Sep 31" },
+      task: "Instagram Stories, TikTok Posts",
+      status: "Awaiting Content Submission",
+    },
   ];
 
   return (
-    <div>
+    <div className="mb-8">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold">Active Campaigns</h2>
         <button className="text-[#FF6B6B] flex items-center gap-2">
