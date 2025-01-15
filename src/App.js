@@ -18,8 +18,9 @@ import Messages from "./pages/user/Messages";
 import ContractSubmit from "./pages/user/Contract Submit";
 import ManageCampaigns from "./pages/user/manage-campaigns";
 import Payment from "./pages/user/Payment";
-
-
+import PricingAndAvailability from "./pages/dashboard/PricingAndAvailability"; // Import Pricing & Availability page
+import PricingAvailability from "./pages/dashboard/PricingAvailability"; // Import Pricing and Availability component
+import Settings from "./pages/dashboard/Settings";
 
 function App() {
   return (
@@ -40,7 +41,10 @@ function App() {
       <Route path="/messages" element={<Messages />} /> {/* Messages route */}
       <Route path="/contractsubmit" element={<ContractSubmit />} /> {/* Login page route */}
       <Route path="/manage-campaigns" element={<ManageCampaigns />} /> {/* Login page route */}
+      <Route path="/pricing-and-availability" element={<PricingAndAvailability />} /> {/* Pricing & Availability page route */}
       <Route path="/payment" element={<Payment />} /> {/* Login page route */}
+      <Route path="/pricingavailability" element={<PricingAvailability />} /> {/* Pricing & Availability page route */}
+      <Route path="/settings" element={<Settings />} /> {/* Settings page route */}
 
     </Routes>
   );

@@ -8,28 +8,29 @@ import { CampaignStats } from '../../components/Campaigns/CampaignStats';
 
 const Campaigns = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <Header />
-      
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-12 gap-8">
-          
-          {/* Sidebar */}
-          <div className="col-span-2">
-            <Sidebar />
-          </div>
-          
-          {/* Campaigns Content */}
-          <div className="col-span-7">
-            <ActiveCampaigns />
-            <PendingApprovals />
-            <CompletedCampaigns />
-          </div>
-          
-          {/* Campaign Stats */}
-          <div className="col-span-3">
-            <CampaignStats />
+    <div className="flex min-h-screen bg-pink-50">
+      {/* Sidebar */}
+      <Sidebar />
+
+      {/* Main Content */}
+      <div className="flex-1">
+        {/* Header */}
+        <Header />
+
+        {/* Campaigns Content */}
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="grid grid-cols-12 gap-8">
+            {/* Campaigns Details Section */}
+            <div className="col-span-8">
+              <ActiveCampaigns />
+              <PendingApprovals />
+              <CompletedCampaigns />
+            </div>
+
+            {/* Campaign Stats Section */}
+            <div className="col-span-4">
+              <CampaignStats />
+            </div>
           </div>
         </div>
       </div>
