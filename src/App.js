@@ -21,6 +21,7 @@ import Payment from "./pages/user/Payment";
 import PricingAndAvailability from "./pages/dashboard/PricingAndAvailability"; // Import Pricing & Availability page
 import PricingAvailability from "./pages/dashboard/PricingAvailability"; // Import Pricing and Availability component
 import Settings from "./pages/dashboard/Settings";
+import PaymentAndPayouts from "./pages/dashboard/PaymentAndPayouts";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <Route path="/payment" element={<Payment />} /> {/* Login page route */}
       <Route path="/pricingavailability" element={<PricingAvailability />} /> {/* Pricing & Availability page route */}
       <Route path="/settings" element={<Settings />} /> {/* Settings page route */}
+      <Route path="/payments&payouts" element={<PaymentAndPayouts />} /> {/* Payments and payouts page route */}
 
     </Routes>
   );

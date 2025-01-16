@@ -9,7 +9,7 @@ const Sidebar = () => {
     { path: ["/dashboard"], icon: "🏠", text: "Dashboard" },
     { path: ["/pricing-and-availability", "/pricingavailability"], icon: "💰", text: "Pricing & Availability" },
     { path: ["/campaigns"], icon: "📊", text: "Campaigns" },
-    { path: ["/payments"], icon: "💳", text: "Payment & Payouts" },
+    { path: ["/payments&payouts"], icon: "💳", text: "Payment & Payouts" },
     { path: ["/settings"], icon: "⚙️", text: "Settings" },
   ];
 

@@ -1,4 +1,8 @@
 import React from 'react';
+import facebookIcon from './assets/facebook.png'; // Replace with actual icon paths
+import instagramIcon from './assets/instagram.png';
+import twitterIcon from './assets/twitter.png';
+import youtubeIcon from './assets/youtube.png';
 
 export const SocialMedia = ({ socialMedia }) => (
   <div className="bg-white rounded-lg p-6 mt-6 shadow-sm">
@@ -10,7 +14,21 @@ export const SocialMedia = ({ socialMedia }) => (
       {socialMedia.map((platform, index) => (
         <div key={index} className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img src={platform.icon} alt={platform.platform} className="w-10 h-10" />
+            <img 
+              src={
+                platform.platform === 'Facebook'
+                  ? facebookIcon
+                  : platform.platform === 'Instagram'
+                  ? instagramIcon
+                  : platform.platform === 'Twitter'
+                  ? twitterIcon
+                  : platform.platform === 'YouTube'
+                  ? youtubeIcon
+                  : platform.icon
+              }
+              alt={platform.platform}
+              className="w-10 h-10"
+            />
             <div>
               <p className="font-medium">{platform.handle}</p>
               <p className="text-sm text-gray-500">{platform.followers}</p>
